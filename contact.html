@@ -10,7 +10,7 @@
 
 <!--Footer-->
 	<link href="css/sticky-footer.css" rel="stylesheet">
-	
+
 <link href="img/icon/favicon-96x96.png" rel="icon" type="image/x-icon">
 
 <style>
@@ -68,13 +68,16 @@ text-align: center;
 .footer{
 background-color: rgba(23,38,57,0.7);
 color: white;
+position: sticky;
 
 }
 @font-face{
 	font-family: "OE";
 	src: url("css/fonts/Old_Englished_Boots.ttf");
 }
-
+@media screen and (max-width: 477px){
+	.address{
+		visibility: hidden;
 </style>
 </head>
 
@@ -82,25 +85,25 @@ color: white;
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<!-- <a class="navbar-brand" href="#"> -->
 			<img src="img/OLGB_3d_logo1.png" width="50" height="50" alt="One Life's Brand Logo">
-			
+
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
-														
+
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			
+
 			<ul class="navbar-nav mr-auto">
-				
+
 				<h1 class="title" style="padding-left: 1.8em; padding-top:.085em; padding-right: 3em; color:#b50909; font-family: OE, sans-serif; font-weight: normal; font-style: normal; size:36;">ONE LIFE</h1>
-				
+
 				<li class="nav-item"> <a class="nav-link" href="about.html">Home <span class="sr-only">(Home)</span></a> </li>
 				<li class="nav-item"> <a class="nav-link" href="products.html">Products<span class="sr-only">(Products Page)</span></a> </li>
 				<li class="nav-item"> <a class="nav-link" href="creation.html">Creative Space <span class="sr-only">(Next, Creative Space Page)</span></a> </li>
 				<li class="nav-item"> <a class="nav-link" href="gallery.html">Gallery<span class="sr-only">(Gallery Page)</span></a> </li>
 				<li class="nav-item active"> <a class="nav-link" href="#">Contact<span class="sr-only">(current page, Contact Page)</span></a> </li>
-						
+
 			</ul>
-			
+
 		</div>
 	</nav>
 
@@ -108,10 +111,10 @@ color: white;
 
 	<div class="container1">
 		<form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbySbFNGM3uhCoqJgQowkchVoNEAs8YAW2FHm4X2EJmHrmNRkw2k/exec">
-    			
+		<!--Currently a test email-->
                         <label for="subject">Subject:</label>
                         <input type="text" id="subject" name="subject"/>
-                    
+
 			<label for="fname">Full Name</label>
 			<input type="text" id="fname" name="name" placeholder="Your name..."/>
 
@@ -122,10 +125,10 @@ color: white;
 			<textarea id="message" name="message" style="height:200px"></textarea>
 
 			<input type="submit" value="Submit"/>
-	
+
 		</form>
 	</div>
-	
+
 	<div style="display:none;" id="thankyou_message">
 		<h2 style="color:white"><em>Thanks</em> for contacting us!
 		We will get back to you soon!</h2>
@@ -154,14 +157,14 @@ src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-
 			<a href="https://www.facebook.com/OneLife309/" target="_blank" style="filter:invert(100%)"><img src="img/fb_logo.png" width="30" height="30" alt="Facebook Logo"></a>
 
 			<a href="https://www.instagram.com/onelifegallboutique/"target="_blank"><img src="img/ig_logo.png" width="45" height="33" alt="Instagram Logo"></a>
-			
+
 			<a href="https://www.grailed.com/onelifegallery309"target="_blank"><img src="img/w-b_grailed_logo.png" width="30" height="30" alt="Grailed Logo"</a>
-			
+
 			<a href="mailto:onelife309@gmail.com"><img src="img/email_logo.png" width="39" height="24" alt="Envelope"></a>
-			
+
 			<a href="https://www.google.com/maps/place/120+E+Beaufort+St,+Normal,+IL+61761/@40.5090319,-88.9878406,17z/data=!4m5!3m4!1s0x880b7100c1fedf21:0x5b049c79d0fbbfb8!8m2!3d40.5098803!4d-88.9833345"target="_blank" style="filter:invert(100%)"><img src="img/nav_logo.png" width="30" height="30" alt="Location"></a>
-		
-		<span style="color: white;">120 E Beaufort St, Normal, IL 61761 </span>
+
+		<span class="address" style="color: white;">120 E Beaufort St, Normal, IL 61761 </span>
       </div>
 </footer>
 
