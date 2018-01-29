@@ -1,4 +1,4 @@
- 
+
 body {
   margin: 0;
   background-image: url("../img/wallpaper_gallery.png") ;
@@ -17,33 +17,19 @@ body {
     @media only screen and (min-width: $lg) {
       width: 25%
     }
-	
-  .column {
-		float: left;
-		width: 100%;
-		padding-bottom:10px;
-		padding-right:15px;
-    }
+
    .ImageDisplay img{
 	  width:20%;
 	  padding-bottom:10px;
 	  padding-right:15px;
     }
-	.row img{
-	  width:20%;
-	  padding-bottom:10px;
-	  padding-right:15px;
-    }
+
 	#instafeed img{
 	  width:20%;
 	  padding-bottom:10px;
 	  padding-right:15px;
     }
-	.row:after{
-		content:"";
-		display:table;
-		clear:both;
-	}
+	
 	.otherTitle {
     position: relative;
     left: 250px;
@@ -52,7 +38,7 @@ body {
 	.footer img{
 	filter:invert(100%);
 	}
-	
+
 	@font-face{
 	font-family: "OE";
 	src: url("fonts/Old_Englished_Boots.ttf");

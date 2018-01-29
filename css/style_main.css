@@ -10,7 +10,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 	color:white;
-	padding-bottom:60px;
 }
 
 div{
@@ -31,5 +30,5 @@ ul{
 		width:500;
 		height:750;
 	}
-	
+
 }
